@@ -2,8 +2,8 @@
 
 # ==================== 配置参数 ====================
 
-POLAR_REPO="https://github.com/ApsaraDB/PolarDB-for-PostgreSQL.git"
-POLAR_BRANCH="POLARDB_15_STABLE"
+# POLAR_REPO="https://github.com/ApsaraDB/PolarDB-for-PostgreSQL.git"
+# POLAR_BRANCH="POLARDB_15_STABLE"
 
 # HNSW 索引参数配置, 如果其中一个参数为空, 则不构建 HNSW 索引
 HNSW_M=16
