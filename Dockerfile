@@ -4,7 +4,7 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y python3-pip python3-requests python3-venv
 
 # 复制代码到镜像仓库
-COPY run.sh /app/run.sh
+COPY --chown=postgres:postgres run.sh /app/run.sh
 
 # 指定工作目录
 WORKDIR /app
