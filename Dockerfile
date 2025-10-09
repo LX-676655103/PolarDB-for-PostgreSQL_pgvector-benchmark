@@ -8,15 +8,15 @@ ARG POLAR_BRANCH="POLARDB_15_STABLE"
 # 注意：不能同时配置 HNSW 索引和 IVF 索引
 
 # HNSW 索引参数配置, 如果其中一个参数为空, 则不构建 HNSW 索引
-ARG HNSW_M=16
-ARG HNSW_EF_CONSTRUCTION=64
+ENV HNSW_M=16
+ENV HNSW_EF_CONSTRUCTION=64
 # HNSW 查询参数
-ARG ef_search_values=(10 20 30 50 80 100 120 140 160 180 200)
+ENV ef_search_values=(10 20 30 50 80 100 120 140 160 180 200)
 
 # IVF 索引参数配置, 如果参数为空, 则不构建 IVF 索引
-ARG IVF_LISTS=
+ENV IVF_LISTS=
 # IVF 查询参数
-ARG probes_values=(1 2 5 10 15 20 30 40 50 64 100)
+ENV probes_values=(1 2 5 10 15 20 30 40 50 64 100)
 
 # ==================== 镜像构建 ====================
 
