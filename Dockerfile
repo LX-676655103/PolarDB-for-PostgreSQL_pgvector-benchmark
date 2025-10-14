@@ -5,6 +5,9 @@ FROM registry.cn-hangzhou.aliyuncs.com/polardb_pg/polardb_pg_devel:ubuntu24.04
 ARG POLAR_REPO="https://github.com/ApsaraDB/PolarDB-for-PostgreSQL.git"
 ARG POLAR_BRANCH="POLARDB_15_STABLE"
 
+# 控制是否显示编译日志, 如果设置为任意非空值, 则输出日志到 stdout, 否则隐藏日志
+ENV SHOW_BUILD_LOG=
+
 # 注意：不能同时配置 HNSW 索引和 IVF 索引
 
 # HNSW 索引参数配置, 如果其中一个参数为空, 则不构建 HNSW 索引
