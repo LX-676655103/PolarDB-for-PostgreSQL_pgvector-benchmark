@@ -43,4 +43,4 @@ RUN python3 -m venv /app/pg-venv && \
     /app/pg-venv/bin/pip3 install psycopg2 numpy h5py
 
 # 容器启动运行命令
-CMD ["bash", "run.sh"]
+CMD ["bash", "/tcdata/run.sh"]
