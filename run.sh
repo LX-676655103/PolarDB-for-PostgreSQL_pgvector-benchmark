@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat /tcdata/run.sh
+source /tcdata/run.sh
